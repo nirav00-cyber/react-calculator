@@ -8,9 +8,13 @@ export const ACTIONS = {
   DELETE_DIGIT: "delete-digit",
   EVALUATE: "evaluate",
 }
-
+function reducer(state, { type, payload })
+{
+  return
+  {}
+}
 function App() {
-  
+  const [{currentOperand,previousOperand,operation},dispatch] = useReducer(reducer,{})  
 
   return (
     <div className="calculator-grid">
